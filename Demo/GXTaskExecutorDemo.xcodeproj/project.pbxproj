@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59E7E42402D908A179FA3C99 /* Pods_GXTaskExecutorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44C4516E29245A3183F6857 /* Pods_GXTaskExecutorDemo.framework */; };
+		6F07AE0ED6B2C5C1DFC1EC39 /* Pods_GXTaskExecutorDemo_GXTaskExecutorDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BEC82E1543DB28227D0035 /* Pods_GXTaskExecutorDemo_GXTaskExecutorDemoUITests.framework */; };
+		E9B84E0E28655E5E00E12189 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B84E0C28655E5E00E12189 /* SceneDelegate.m */; };
+		E9BDBA3E2853074000E5A18F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BDBA3D2853074000E5A18F /* AppDelegate.m */; };
+		E9BDBA442853074000E5A18F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BDBA432853074000E5A18F /* ViewController.m */; };
+		E9BDBA472853074000E5A18F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BDBA452853074000E5A18F /* Main.storyboard */; };
+		E9BDBA492853074100E5A18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9BDBA482853074100E5A18F /* Assets.xcassets */; };
+		E9BDBA4C2853074100E5A18F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BDBA4A2853074100E5A18F /* LaunchScreen.storyboard */; };
+		E9BDBA4F2853074100E5A18F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BDBA4E2853074100E5A18F /* main.m */; };
+		E9BDBA592853074100E5A18F /* GXTaskExecutorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BDBA582853074100E5A18F /* GXTaskExecutorDemoTests.m */; };
+		E9BDBA632853074100E5A18F /* GXTaskExecutorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BDBA622853074100E5A18F /* GXTaskExecutorDemoUITests.m */; };
+		E9BDBA652853074100E5A18F /* GXTaskExecutorDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BDBA642853074100E5A18F /* GXTaskExecutorDemoUITestsLaunchTests.m */; };
+		E9FFF82F285357D4007930E6 /* FirstRunHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FFF82E285357D4007930E6 /* FirstRunHandler.m */; };
+		E9FFF832285357E1007930E6 /* LastRunHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FFF831285357E1007930E6 /* LastRunHandler.m */; };
+		F936FC4D8254CE7F0FB44A43 /* Pods_GXTaskExecutorDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B0F3D32DA9DD7A47B9CA4A /* Pods_GXTaskExecutorDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9BDBA552853074100E5A18F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9BDBA312853074000E5A18F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9BDBA382853074000E5A18F;
+			remoteInfo = GXTaskExecutorDemo;
+		};
+		E9BDBA5F2853074100E5A18F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9BDBA312853074000E5A18F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9BDBA382853074000E5A18F;
+			remoteInfo = GXTaskExecutorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15BEC82E1543DB28227D0035 /* Pods_GXTaskExecutorDemo_GXTaskExecutorDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GXTaskExecutorDemo_GXTaskExecutorDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B7F49717F133CD761FBDE1B /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		414E5C62546E532E7D627E4A /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5ECC93F5D143D6A479C234A4 /* Pods-GXTaskExecutorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXTaskExecutorDemo.release.xcconfig"; path = "Target Support Files/Pods-GXTaskExecutorDemo/Pods-GXTaskExecutorDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6DE56798019175BCA406921E /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests.release.xcconfig"; path = "Target Support Files/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A6E871C8DE1CCDCBBC86CEB /* Pods-GXTaskExecutorDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXTaskExecutorDemoTests.release.xcconfig"; path = "Target Support Files/Pods-GXTaskExecutorDemoTests/Pods-GXTaskExecutorDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F391059560C7C29CBBFE9BD /* Pods-GXTaskExecutorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXTaskExecutorDemo.debug.xcconfig"; path = "Target Support Files/Pods-GXTaskExecutorDemo/Pods-GXTaskExecutorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A2E833D0DF19920D5B568C6D /* Pods-GXTaskExecutorDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXTaskExecutorDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-GXTaskExecutorDemoTests/Pods-GXTaskExecutorDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA5E78F56E8ECEFC398C5CC0 /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B44C4516E29245A3183F6857 /* Pods_GXTaskExecutorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GXTaskExecutorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B0F3D32DA9DD7A47B9CA4A /* Pods_GXTaskExecutorDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GXTaskExecutorDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B84E0C28655E5E00E12189 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		E9B84E0D28655E5E00E12189 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E9BDBA392853074000E5A18F /* GXTaskExecutorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXTaskExecutorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BDBA3C2853074000E5A18F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9BDBA3D2853074000E5A18F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9BDBA422853074000E5A18F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9BDBA432853074000E5A18F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9BDBA462853074000E5A18F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9BDBA482853074100E5A18F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9BDBA4B2853074100E5A18F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9BDBA4D2853074100E5A18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9BDBA4E2853074100E5A18F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9BDBA542853074100E5A18F /* GXTaskExecutorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GXTaskExecutorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BDBA582853074100E5A18F /* GXTaskExecutorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTaskExecutorDemoTests.m; sourceTree = "<group>"; };
+		E9BDBA5E2853074100E5A18F /* GXTaskExecutorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GXTaskExecutorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BDBA622853074100E5A18F /* GXTaskExecutorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTaskExecutorDemoUITests.m; sourceTree = "<group>"; };
+		E9BDBA642853074100E5A18F /* GXTaskExecutorDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTaskExecutorDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		E9FFF82D285357D4007930E6 /* FirstRunHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstRunHandler.h; sourceTree = "<group>"; };
+		E9FFF82E285357D4007930E6 /* FirstRunHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstRunHandler.m; sourceTree = "<group>"; };
+		E9FFF830285357E1007930E6 /* LastRunHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastRunHandler.h; sourceTree = "<group>"; };
+		E9FFF831285357E1007930E6 /* LastRunHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastRunHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9BDBA362853074000E5A18F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E7E42402D908A179FA3C99 /* Pods_GXTaskExecutorDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BDBA512853074100E5A18F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F936FC4D8254CE7F0FB44A43 /* Pods_GXTaskExecutorDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BDBA5B2853074100E5A18F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F07AE0ED6B2C5C1DFC1EC39 /* Pods_GXTaskExecutorDemo_GXTaskExecutorDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCA8A787E75B999F637AB54F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B44C4516E29245A3183F6857 /* Pods_GXTaskExecutorDemo.framework */,
+				15BEC82E1543DB28227D0035 /* Pods_GXTaskExecutorDemo_GXTaskExecutorDemoUITests.framework */,
+				C9B0F3D32DA9DD7A47B9CA4A /* Pods_GXTaskExecutorDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D85DA69AF44851FA150EA539 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F391059560C7C29CBBFE9BD /* Pods-GXTaskExecutorDemo.debug.xcconfig */,
+				5ECC93F5D143D6A479C234A4 /* Pods-GXTaskExecutorDemo.release.xcconfig */,
+				AA5E78F56E8ECEFC398C5CC0 /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.debug.xcconfig */,
+				2B7F49717F133CD761FBDE1B /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.release.xcconfig */,
+				A2E833D0DF19920D5B568C6D /* Pods-GXTaskExecutorDemoTests.debug.xcconfig */,
+				7A6E871C8DE1CCDCBBC86CEB /* Pods-GXTaskExecutorDemoTests.release.xcconfig */,
+				414E5C62546E532E7D627E4A /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests.debug.xcconfig */,
+				6DE56798019175BCA406921E /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9BDBA302853074000E5A18F = {
+			isa = PBXGroup;
+			children = (
+				E9BDBA3B2853074000E5A18F /* GXTaskExecutorDemo */,
+				E9BDBA572853074100E5A18F /* GXTaskExecutorDemoTests */,
+				E9BDBA612853074100E5A18F /* GXTaskExecutorDemoUITests */,
+				E9BDBA3A2853074000E5A18F /* Products */,
+				D85DA69AF44851FA150EA539 /* Pods */,
+				BCA8A787E75B999F637AB54F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9BDBA3A2853074000E5A18F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9BDBA392853074000E5A18F /* GXTaskExecutorDemo.app */,
+				E9BDBA542853074100E5A18F /* GXTaskExecutorDemoTests.xctest */,
+				E9BDBA5E2853074100E5A18F /* GXTaskExecutorDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9BDBA3B2853074000E5A18F /* GXTaskExecutorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E9B84E0D28655E5E00E12189 /* SceneDelegate.h */,
+				E9B84E0C28655E5E00E12189 /* SceneDelegate.m */,
+				E9BDBA3C2853074000E5A18F /* AppDelegate.h */,
+				E9BDBA3D2853074000E5A18F /* AppDelegate.m */,
+				E9BDBA422853074000E5A18F /* ViewController.h */,
+				E9BDBA432853074000E5A18F /* ViewController.m */,
+				E9BDBA452853074000E5A18F /* Main.storyboard */,
+				E9BDBA482853074100E5A18F /* Assets.xcassets */,
+				E9BDBA4A2853074100E5A18F /* LaunchScreen.storyboard */,
+				E9BDBA4D2853074100E5A18F /* Info.plist */,
+				E9BDBA4E2853074100E5A18F /* main.m */,
+				E9FFF82D285357D4007930E6 /* FirstRunHandler.h */,
+				E9FFF82E285357D4007930E6 /* FirstRunHandler.m */,
+				E9FFF830285357E1007930E6 /* LastRunHandler.h */,
+				E9FFF831285357E1007930E6 /* LastRunHandler.m */,
+			);
+			path = GXTaskExecutorDemo;
+			sourceTree = "<group>";
+		};
+		E9BDBA572853074100E5A18F /* GXTaskExecutorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9BDBA582853074100E5A18F /* GXTaskExecutorDemoTests.m */,
+			);
+			path = GXTaskExecutorDemoTests;
+			sourceTree = "<group>";
+		};
+		E9BDBA612853074100E5A18F /* GXTaskExecutorDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9BDBA622853074100E5A18F /* GXTaskExecutorDemoUITests.m */,
+				E9BDBA642853074100E5A18F /* GXTaskExecutorDemoUITestsLaunchTests.m */,
+			);
+			path = GXTaskExecutorDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9BDBA382853074000E5A18F /* GXTaskExecutorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BDBA682853074100E5A18F /* Build configuration list for PBXNativeTarget "GXTaskExecutorDemo" */;
+			buildPhases = (
+				9B8E0BF51819F484D811ADF4 /* [CP] Check Pods Manifest.lock */,
+				E9BDBA352853074000E5A18F /* Sources */,
+				E9BDBA362853074000E5A18F /* Frameworks */,
+				E9BDBA372853074000E5A18F /* Resources */,
+				539754FA3ACCC5E9BC066D9A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GXTaskExecutorDemo;
+			productName = GXTaskExecutorDemo;
+			productReference = E9BDBA392853074000E5A18F /* GXTaskExecutorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9BDBA532853074100E5A18F /* GXTaskExecutorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BDBA6B2853074100E5A18F /* Build configuration list for PBXNativeTarget "GXTaskExecutorDemoTests" */;
+			buildPhases = (
+				294F883CD8A50CA76678BDC9 /* [CP] Check Pods Manifest.lock */,
+				E9BDBA502853074100E5A18F /* Sources */,
+				E9BDBA512853074100E5A18F /* Frameworks */,
+				E9BDBA522853074100E5A18F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9BDBA562853074100E5A18F /* PBXTargetDependency */,
+			);
+			name = GXTaskExecutorDemoTests;
+			productName = GXTaskExecutorDemoTests;
+			productReference = E9BDBA542853074100E5A18F /* GXTaskExecutorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9BDBA5D2853074100E5A18F /* GXTaskExecutorDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BDBA6E2853074100E5A18F /* Build configuration list for PBXNativeTarget "GXTaskExecutorDemoUITests" */;
+			buildPhases = (
+				16CDD98F6243EC799CA65923 /* [CP] Check Pods Manifest.lock */,
+				E9BDBA5A2853074100E5A18F /* Sources */,
+				E9BDBA5B2853074100E5A18F /* Frameworks */,
+				E9BDBA5C2853074100E5A18F /* Resources */,
+				D7B6F1D52009C0CE81C22CC0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9BDBA602853074100E5A18F /* PBXTargetDependency */,
+			);
+			name = GXTaskExecutorDemoUITests;
+			productName = GXTaskExecutorDemoUITests;
+			productReference = E9BDBA5E2853074100E5A18F /* GXTaskExecutorDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9BDBA312853074000E5A18F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E9BDBA382853074000E5A18F = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					E9BDBA532853074100E5A18F = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = E9BDBA382853074000E5A18F;
+					};
+					E9BDBA5D2853074100E5A18F = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = E9BDBA382853074000E5A18F;
+					};
+				};
+			};
+			buildConfigurationList = E9BDBA342853074000E5A18F /* Build configuration list for PBXProject "GXTaskExecutorDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9BDBA302853074000E5A18F;
+			productRefGroup = E9BDBA3A2853074000E5A18F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9BDBA382853074000E5A18F /* GXTaskExecutorDemo */,
+				E9BDBA532853074100E5A18F /* GXTaskExecutorDemoTests */,
+				E9BDBA5D2853074100E5A18F /* GXTaskExecutorDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9BDBA372853074000E5A18F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BDBA4C2853074100E5A18F /* LaunchScreen.storyboard in Resources */,
+				E9BDBA492853074100E5A18F /* Assets.xcassets in Resources */,
+				E9BDBA472853074000E5A18F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BDBA522853074100E5A18F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BDBA5C2853074100E5A18F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16CDD98F6243EC799CA65923 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		294F883CD8A50CA76678BDC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GXTaskExecutorDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		539754FA3ACCC5E9BC066D9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GXTaskExecutorDemo/Pods-GXTaskExecutorDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GXTaskExecutorDemo/Pods-GXTaskExecutorDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GXTaskExecutorDemo/Pods-GXTaskExecutorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B8E0BF51819F484D811ADF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GXTaskExecutorDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B6F1D52009C0CE81C22CC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests/Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9BDBA352853074000E5A18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BDBA442853074000E5A18F /* ViewController.m in Sources */,
+				E9B84E0E28655E5E00E12189 /* SceneDelegate.m in Sources */,
+				E9FFF832285357E1007930E6 /* LastRunHandler.m in Sources */,
+				E9BDBA3E2853074000E5A18F /* AppDelegate.m in Sources */,
+				E9BDBA4F2853074100E5A18F /* main.m in Sources */,
+				E9FFF82F285357D4007930E6 /* FirstRunHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BDBA502853074100E5A18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BDBA592853074100E5A18F /* GXTaskExecutorDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BDBA5A2853074100E5A18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BDBA652853074100E5A18F /* GXTaskExecutorDemoUITestsLaunchTests.m in Sources */,
+				E9BDBA632853074100E5A18F /* GXTaskExecutorDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9BDBA562853074100E5A18F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9BDBA382853074000E5A18F /* GXTaskExecutorDemo */;
+			targetProxy = E9BDBA552853074100E5A18F /* PBXContainerItemProxy */;
+		};
+		E9BDBA602853074100E5A18F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9BDBA382853074000E5A18F /* GXTaskExecutorDemo */;
+			targetProxy = E9BDBA5F2853074100E5A18F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9BDBA452853074000E5A18F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9BDBA462853074000E5A18F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9BDBA4A2853074100E5A18F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9BDBA4B2853074100E5A18F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9BDBA662853074100E5A18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		E9BDBA672853074100E5A18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9BDBA692853074100E5A18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F391059560C7C29CBBFE9BD /* Pods-GXTaskExecutorDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/GXTaskExecutor/GXTaskExecutor.framework/Headers\"";
+				INFOPLIST_FILE = GXTaskExecutorDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		E9BDBA6A2853074100E5A18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ECC93F5D143D6A479C234A4 /* Pods-GXTaskExecutorDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/GXTaskExecutor/GXTaskExecutor.framework/Headers\"";
+				INFOPLIST_FILE = GXTaskExecutorDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		E9BDBA6C2853074100E5A18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E833D0DF19920D5B568C6D /* Pods-GXTaskExecutorDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GXTaskExecutorDemo.app/GXTaskExecutorDemo";
+			};
+			name = Debug;
+		};
+		E9BDBA6D2853074100E5A18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A6E871C8DE1CCDCBBC86CEB /* Pods-GXTaskExecutorDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GXTaskExecutorDemo.app/GXTaskExecutorDemo";
+			};
+			name = Release;
+		};
+		E9BDBA6F2853074100E5A18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA5E78F56E8ECEFC398C5CC0 /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GXTaskExecutorDemo;
+			};
+			name = Debug;
+		};
+		E9BDBA702853074100E5A18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B7F49717F133CD761FBDE1B /* Pods-GXTaskExecutorDemo-GXTaskExecutorDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GXTaskExecutorDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9BDBA342853074000E5A18F /* Build configuration list for PBXProject "GXTaskExecutorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BDBA662853074100E5A18F /* Debug */,
+				E9BDBA672853074100E5A18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9BDBA682853074100E5A18F /* Build configuration list for PBXNativeTarget "GXTaskExecutorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BDBA692853074100E5A18F /* Debug */,
+				E9BDBA6A2853074100E5A18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9BDBA6B2853074100E5A18F /* Build configuration list for PBXNativeTarget "GXTaskExecutorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BDBA6C2853074100E5A18F /* Debug */,
+				E9BDBA6D2853074100E5A18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9BDBA6E2853074100E5A18F /* Build configuration list for PBXNativeTarget "GXTaskExecutorDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BDBA6F2853074100E5A18F /* Debug */,
+				E9BDBA702853074100E5A18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9BDBA312853074000E5A18F /* Project object */;
+}

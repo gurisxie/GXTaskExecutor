@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E982013F284E34C600B6AEAC /* GXTaskExecutor.docc in Sources */ = {isa = PBXBuildFile; fileRef = E982013E284E34C600B6AEAC /* GXTaskExecutor.docc */; };
+		E9820145284E34C600B6AEAC /* GXTaskExecutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E982013A284E34C500B6AEAC /* GXTaskExecutor.framework */; };
+		E982014A284E34C600B6AEAC /* GXTaskExecutorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820149284E34C600B6AEAC /* GXTaskExecutorTests.m */; };
+		E982014B284E34C600B6AEAC /* GXTaskExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = E982013D284E34C500B6AEAC /* GXTaskExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E982015A284E361300B6AEAC /* GXThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820156284E361300B6AEAC /* GXThreadSafeMutableArray.m */; };
+		E982015B284E361300B6AEAC /* GXGCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820157284E361300B6AEAC /* GXGCDTimer.h */; };
+		E982015C284E361300B6AEAC /* GXThreadSafeMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820158284E361300B6AEAC /* GXThreadSafeMutableArray.h */; };
+		E982015D284E361300B6AEAC /* GXGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820159284E361300B6AEAC /* GXGCDTimer.m */; };
+		E9820166284E362100B6AEAC /* GXChainExecutor+Call.h in Headers */ = {isa = PBXBuildFile; fileRef = E982015E284E362100B6AEAC /* GXChainExecutor+Call.h */; };
+		E9820167284E362100B6AEAC /* GXTaskObserver+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = E982015F284E362100B6AEAC /* GXTaskObserver+Protected.h */; };
+		E9820168284E362100B6AEAC /* GXTaskObserver+Call.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820160284E362100B6AEAC /* GXTaskObserver+Call.h */; };
+		E9820169284E362100B6AEAC /* GXTaskObserver+Call.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820161284E362100B6AEAC /* GXTaskObserver+Call.m */; };
+		E982016A284E362100B6AEAC /* GXDefaultHandlerGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820162284E362100B6AEAC /* GXDefaultHandlerGenerator.h */; };
+		E982016B284E362100B6AEAC /* GXChainExecutor+Call.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820163284E362100B6AEAC /* GXChainExecutor+Call.m */; };
+		E982016C284E362100B6AEAC /* GXChainExecutor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820164284E362100B6AEAC /* GXChainExecutor+Private.h */; };
+		E982016D284E362100B6AEAC /* GXDefaultHandlerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820165284E362100B6AEAC /* GXDefaultHandlerGenerator.m */; };
+		E982018B284E363300B6AEAC /* GXChainExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = E982016E284E363300B6AEAC /* GXChainExecutor.m */; };
+		E982018C284E363300B6AEAC /* GXChainContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E982016F284E363300B6AEAC /* GXChainContext.m */; };
+		E982018D284E363300B6AEAC /* GXChainQueueUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820170284E363300B6AEAC /* GXChainQueueUtil.m */; };
+		E982018E284E363300B6AEAC /* GXTaskExecutorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820171284E363300B6AEAC /* GXTaskExecutorProtocol.h */; };
+		E982018F284E363300B6AEAC /* GXHandlerChainIdentifierConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820172284E363300B6AEAC /* GXHandlerChainIdentifierConvert.h */; };
+		E9820190284E363300B6AEAC /* GXHandlerChainGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820173284E363300B6AEAC /* GXHandlerChainGenerator.m */; };
+		E9820191284E363300B6AEAC /* GXChainQueueUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820174284E363300B6AEAC /* GXChainQueueUtil.h */; };
+		E9820192284E363300B6AEAC /* GXHandlerChain.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820175284E363300B6AEAC /* GXHandlerChain.m */; };
+		E9820193284E363300B6AEAC /* GXTask.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820176284E363300B6AEAC /* GXTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9820194284E363300B6AEAC /* GXHandlerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820177284E363300B6AEAC /* GXHandlerConfig.h */; };
+		E9820195284E363300B6AEAC /* GXAutoincreaseIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820178284E363300B6AEAC /* GXAutoincreaseIdGenerator.m */; };
+		E9820196284E363300B6AEAC /* GXTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820179284E363300B6AEAC /* GXTask.m */; };
+		E9820197284E363300B6AEAC /* GXHandlerChainGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E982017A284E363300B6AEAC /* GXHandlerChainGenerator.h */; };
+		E9820198284E363300B6AEAC /* GXBaseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E982017B284E363300B6AEAC /* GXBaseHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9820199284E363300B6AEAC /* GXChainExecutorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E982017C284E363300B6AEAC /* GXChainExecutorProtocol.h */; };
+		E982019A284E363300B6AEAC /* GXBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E982017D284E363300B6AEAC /* GXBaseHandler.m */; };
+		E982019B284E363300B6AEAC /* GXHandlerChainIdentifierConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = E982017E284E363300B6AEAC /* GXHandlerChainIdentifierConvert.m */; };
+		E982019C284E363300B6AEAC /* GXHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E982017F284E363300B6AEAC /* GXHandler.h */; };
+		E982019D284E363300B6AEAC /* GXChainContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820180284E363300B6AEAC /* GXChainContext.h */; };
+		E982019E284E363300B6AEAC /* GXAutoincreaseIdGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820181284E363300B6AEAC /* GXAutoincreaseIdGenerator.h */; };
+		E982019F284E363300B6AEAC /* GXTaskExecutorInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820182284E363300B6AEAC /* GXTaskExecutorInstance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E98201A0284E363300B6AEAC /* GXTaskObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820183284E363300B6AEAC /* GXTaskObserver.m */; };
+		E98201A1284E363300B6AEAC /* GXTaskExecutorInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820184284E363300B6AEAC /* GXTaskExecutorInstance.m */; };
+		E98201A2284E363300B6AEAC /* GXHandlerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E9820185284E363300B6AEAC /* GXHandlerConfig.m */; };
+		E98201A3284E363300B6AEAC /* GXHandlerChain.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820186284E363300B6AEAC /* GXHandlerChain.h */; };
+		E98201A4284E363300B6AEAC /* GXTaskObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820187284E363300B6AEAC /* GXTaskObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E98201A5284E363300B6AEAC /* GXHandlerGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820188284E363300B6AEAC /* GXHandlerGenerator.h */; };
+		E98201A6284E363300B6AEAC /* GXErrorGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E9820189284E363300B6AEAC /* GXErrorGenerator.h */; };
+		E98201A7284E363300B6AEAC /* GXChainExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = E982018A284E363300B6AEAC /* GXChainExecutor.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9820146284E34C600B6AEAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9820131284E34C500B6AEAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9820139284E34C500B6AEAC;
+			remoteInfo = GXTaskExecutor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E982013A284E34C500B6AEAC /* GXTaskExecutor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GXTaskExecutor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E982013D284E34C500B6AEAC /* GXTaskExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTaskExecutor.h; sourceTree = "<group>"; };
+		E982013E284E34C600B6AEAC /* GXTaskExecutor.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GXTaskExecutor.docc; sourceTree = "<group>"; };
+		E9820144284E34C600B6AEAC /* GXTaskExecutorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GXTaskExecutorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9820149284E34C600B6AEAC /* GXTaskExecutorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTaskExecutorTests.m; sourceTree = "<group>"; };
+		E9820156284E361300B6AEAC /* GXThreadSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXThreadSafeMutableArray.m; sourceTree = "<group>"; };
+		E9820157284E361300B6AEAC /* GXGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXGCDTimer.h; sourceTree = "<group>"; };
+		E9820158284E361300B6AEAC /* GXThreadSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXThreadSafeMutableArray.h; sourceTree = "<group>"; };
+		E9820159284E361300B6AEAC /* GXGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXGCDTimer.m; sourceTree = "<group>"; };
+		E982015E284E362100B6AEAC /* GXChainExecutor+Call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GXChainExecutor+Call.h"; sourceTree = "<group>"; };
+		E982015F284E362100B6AEAC /* GXTaskObserver+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GXTaskObserver+Protected.h"; sourceTree = "<group>"; };
+		E9820160284E362100B6AEAC /* GXTaskObserver+Call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GXTaskObserver+Call.h"; sourceTree = "<group>"; };
+		E9820161284E362100B6AEAC /* GXTaskObserver+Call.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GXTaskObserver+Call.m"; sourceTree = "<group>"; };
+		E9820162284E362100B6AEAC /* GXDefaultHandlerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXDefaultHandlerGenerator.h; sourceTree = "<group>"; };
+		E9820163284E362100B6AEAC /* GXChainExecutor+Call.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GXChainExecutor+Call.m"; sourceTree = "<group>"; };
+		E9820164284E362100B6AEAC /* GXChainExecutor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GXChainExecutor+Private.h"; sourceTree = "<group>"; };
+		E9820165284E362100B6AEAC /* GXDefaultHandlerGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXDefaultHandlerGenerator.m; sourceTree = "<group>"; };
+		E982016E284E363300B6AEAC /* GXChainExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXChainExecutor.m; sourceTree = "<group>"; };
+		E982016F284E363300B6AEAC /* GXChainContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXChainContext.m; sourceTree = "<group>"; };
+		E9820170284E363300B6AEAC /* GXChainQueueUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXChainQueueUtil.m; sourceTree = "<group>"; };
+		E9820171284E363300B6AEAC /* GXTaskExecutorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXTaskExecutorProtocol.h; sourceTree = "<group>"; };
+		E9820172284E363300B6AEAC /* GXHandlerChainIdentifierConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHandlerChainIdentifierConvert.h; sourceTree = "<group>"; };
+		E9820173284E363300B6AEAC /* GXHandlerChainGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXHandlerChainGenerator.m; sourceTree = "<group>"; };
+		E9820174284E363300B6AEAC /* GXChainQueueUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXChainQueueUtil.h; sourceTree = "<group>"; };
+		E9820175284E363300B6AEAC /* GXHandlerChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXHandlerChain.m; sourceTree = "<group>"; };
+		E9820176284E363300B6AEAC /* GXTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXTask.h; sourceTree = "<group>"; };
+		E9820177284E363300B6AEAC /* GXHandlerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHandlerConfig.h; sourceTree = "<group>"; };
+		E9820178284E363300B6AEAC /* GXAutoincreaseIdGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXAutoincreaseIdGenerator.m; sourceTree = "<group>"; };
+		E9820179284E363300B6AEAC /* GXTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXTask.m; sourceTree = "<group>"; };
+		E982017A284E363300B6AEAC /* GXHandlerChainGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHandlerChainGenerator.h; sourceTree = "<group>"; };
+		E982017B284E363300B6AEAC /* GXBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXBaseHandler.h; sourceTree = "<group>"; };
+		E982017C284E363300B6AEAC /* GXChainExecutorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXChainExecutorProtocol.h; sourceTree = "<group>"; };
+		E982017D284E363300B6AEAC /* GXBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXBaseHandler.m; sourceTree = "<group>"; };
+		E982017E284E363300B6AEAC /* GXHandlerChainIdentifierConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXHandlerChainIdentifierConvert.m; sourceTree = "<group>"; };
+		E982017F284E363300B6AEAC /* GXHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHandler.h; sourceTree = "<group>"; };
+		E9820180284E363300B6AEAC /* GXChainContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXChainContext.h; sourceTree = "<group>"; };
+		E9820181284E363300B6AEAC /* GXAutoincreaseIdGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXAutoincreaseIdGenerator.h; sourceTree = "<group>"; };
+		E9820182284E363300B6AEAC /* GXTaskExecutorInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXTaskExecutorInstance.h; sourceTree = "<group>"; };
+		E9820183284E363300B6AEAC /* GXTaskObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXTaskObserver.m; sourceTree = "<group>"; };
+		E9820184284E363300B6AEAC /* GXTaskExecutorInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXTaskExecutorInstance.m; sourceTree = "<group>"; };
+		E9820185284E363300B6AEAC /* GXHandlerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXHandlerConfig.m; sourceTree = "<group>"; };
+		E9820186284E363300B6AEAC /* GXHandlerChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHandlerChain.h; sourceTree = "<group>"; };
+		E9820187284E363300B6AEAC /* GXTaskObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXTaskObserver.h; sourceTree = "<group>"; };
+		E9820188284E363300B6AEAC /* GXHandlerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHandlerGenerator.h; sourceTree = "<group>"; };
+		E9820189284E363300B6AEAC /* GXErrorGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXErrorGenerator.h; sourceTree = "<group>"; };
+		E982018A284E363300B6AEAC /* GXChainExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXChainExecutor.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9820137284E34C500B6AEAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9820141284E34C600B6AEAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9820145284E34C600B6AEAC /* GXTaskExecutor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E93B27B02852FF8500FE8845 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				E9820176284E363300B6AEAC /* GXTask.h */,
+				E9820179284E363300B6AEAC /* GXTask.m */,
+				E9820171284E363300B6AEAC /* GXTaskExecutorProtocol.h */,
+				E9820187284E363300B6AEAC /* GXTaskObserver.h */,
+				E9820183284E363300B6AEAC /* GXTaskObserver.m */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		E93B27B12852FFFE00FE8845 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				E982017B284E363300B6AEAC /* GXBaseHandler.h */,
+				E982017D284E363300B6AEAC /* GXBaseHandler.m */,
+				E982017F284E363300B6AEAC /* GXHandler.h */,
+				E9820177284E363300B6AEAC /* GXHandlerConfig.h */,
+				E9820185284E363300B6AEAC /* GXHandlerConfig.m */,
+				E9820188284E363300B6AEAC /* GXHandlerGenerator.h */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		E9820130284E34C500B6AEAC = {
+			isa = PBXGroup;
+			children = (
+				E982013C284E34C500B6AEAC /* GXTaskExecutor */,
+				E9820148284E34C600B6AEAC /* GXTaskExecutorTests */,
+				E982013B284E34C500B6AEAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E982013B284E34C500B6AEAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E982013A284E34C500B6AEAC /* GXTaskExecutor.framework */,
+				E9820144284E34C600B6AEAC /* GXTaskExecutorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E982013C284E34C500B6AEAC /* GXTaskExecutor */ = {
+			isa = PBXGroup;
+			children = (
+				E9820182284E363300B6AEAC /* GXTaskExecutorInstance.h */,
+				E9820184284E363300B6AEAC /* GXTaskExecutorInstance.m */,
+				E93B27B12852FFFE00FE8845 /* Handler */,
+				E93B27B02852FF8500FE8845 /* Task */,
+				E98201A8284E364500B6AEAC /* Chain */,
+				E9820155284E354100B6AEAC /* Tool */,
+				E9820154284E352F00B6AEAC /* Private */,
+				E982013D284E34C500B6AEAC /* GXTaskExecutor.h */,
+				E982013E284E34C600B6AEAC /* GXTaskExecutor.docc */,
+			);
+			path = GXTaskExecutor;
+			sourceTree = "<group>";
+		};
+		E9820148284E34C600B6AEAC /* GXTaskExecutorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9820149284E34C600B6AEAC /* GXTaskExecutorTests.m */,
+			);
+			path = GXTaskExecutorTests;
+			sourceTree = "<group>";
+		};
+		E9820154284E352F00B6AEAC /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				E982015E284E362100B6AEAC /* GXChainExecutor+Call.h */,
+				E9820163284E362100B6AEAC /* GXChainExecutor+Call.m */,
+				E9820164284E362100B6AEAC /* GXChainExecutor+Private.h */,
+				E9820162284E362100B6AEAC /* GXDefaultHandlerGenerator.h */,
+				E9820165284E362100B6AEAC /* GXDefaultHandlerGenerator.m */,
+				E9820160284E362100B6AEAC /* GXTaskObserver+Call.h */,
+				E9820161284E362100B6AEAC /* GXTaskObserver+Call.m */,
+				E982015F284E362100B6AEAC /* GXTaskObserver+Protected.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		E9820155284E354100B6AEAC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E9820189284E363300B6AEAC /* GXErrorGenerator.h */,
+				E9820181284E363300B6AEAC /* GXAutoincreaseIdGenerator.h */,
+				E9820178284E363300B6AEAC /* GXAutoincreaseIdGenerator.m */,
+				E9820157284E361300B6AEAC /* GXGCDTimer.h */,
+				E9820159284E361300B6AEAC /* GXGCDTimer.m */,
+				E9820158284E361300B6AEAC /* GXThreadSafeMutableArray.h */,
+				E9820156284E361300B6AEAC /* GXThreadSafeMutableArray.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E98201A8284E364500B6AEAC /* Chain */ = {
+			isa = PBXGroup;
+			children = (
+				E9820174284E363300B6AEAC /* GXChainQueueUtil.h */,
+				E9820170284E363300B6AEAC /* GXChainQueueUtil.m */,
+				E982017C284E363300B6AEAC /* GXChainExecutorProtocol.h */,
+				E9820180284E363300B6AEAC /* GXChainContext.h */,
+				E982016F284E363300B6AEAC /* GXChainContext.m */,
+				E9820186284E363300B6AEAC /* GXHandlerChain.h */,
+				E9820175284E363300B6AEAC /* GXHandlerChain.m */,
+				E982018A284E363300B6AEAC /* GXChainExecutor.h */,
+				E982016E284E363300B6AEAC /* GXChainExecutor.m */,
+				E982017A284E363300B6AEAC /* GXHandlerChainGenerator.h */,
+				E9820173284E363300B6AEAC /* GXHandlerChainGenerator.m */,
+				E9820172284E363300B6AEAC /* GXHandlerChainIdentifierConvert.h */,
+				E982017E284E363300B6AEAC /* GXHandlerChainIdentifierConvert.m */,
+			);
+			path = Chain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9820135284E34C500B6AEAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9820194284E363300B6AEAC /* GXHandlerConfig.h in Headers */,
+				E982016A284E362100B6AEAC /* GXDefaultHandlerGenerator.h in Headers */,
+				E9820166284E362100B6AEAC /* GXChainExecutor+Call.h in Headers */,
+				E982019E284E363300B6AEAC /* GXAutoincreaseIdGenerator.h in Headers */,
+				E98201A6284E363300B6AEAC /* GXErrorGenerator.h in Headers */,
+				E98201A7284E363300B6AEAC /* GXChainExecutor.h in Headers */,
+				E982019C284E363300B6AEAC /* GXHandler.h in Headers */,
+				E982016C284E362100B6AEAC /* GXChainExecutor+Private.h in Headers */,
+				E982015B284E361300B6AEAC /* GXGCDTimer.h in Headers */,
+				E9820193284E363300B6AEAC /* GXTask.h in Headers */,
+				E982019D284E363300B6AEAC /* GXChainContext.h in Headers */,
+				E98201A5284E363300B6AEAC /* GXHandlerGenerator.h in Headers */,
+				E9820168284E362100B6AEAC /* GXTaskObserver+Call.h in Headers */,
+				E982014B284E34C600B6AEAC /* GXTaskExecutor.h in Headers */,
+				E982018E284E363300B6AEAC /* GXTaskExecutorProtocol.h in Headers */,
+				E9820198284E363300B6AEAC /* GXBaseHandler.h in Headers */,
+				E9820167284E362100B6AEAC /* GXTaskObserver+Protected.h in Headers */,
+				E9820191284E363300B6AEAC /* GXChainQueueUtil.h in Headers */,
+				E982015C284E361300B6AEAC /* GXThreadSafeMutableArray.h in Headers */,
+				E9820197284E363300B6AEAC /* GXHandlerChainGenerator.h in Headers */,
+				E9820199284E363300B6AEAC /* GXChainExecutorProtocol.h in Headers */,
+				E98201A4284E363300B6AEAC /* GXTaskObserver.h in Headers */,
+				E982018F284E363300B6AEAC /* GXHandlerChainIdentifierConvert.h in Headers */,
+				E98201A3284E363300B6AEAC /* GXHandlerChain.h in Headers */,
+				E982019F284E363300B6AEAC /* GXTaskExecutorInstance.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E9820139284E34C500B6AEAC /* GXTaskExecutor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E982014E284E34C600B6AEAC /* Build configuration list for PBXNativeTarget "GXTaskExecutor" */;
+			buildPhases = (
+				E9820135284E34C500B6AEAC /* Headers */,
+				E9820136284E34C500B6AEAC /* Sources */,
+				E9820137284E34C500B6AEAC /* Frameworks */,
+				E9820138284E34C500B6AEAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GXTaskExecutor;
+			productName = GXTaskExecutor;
+			productReference = E982013A284E34C500B6AEAC /* GXTaskExecutor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9820143284E34C600B6AEAC /* GXTaskExecutorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9820151284E34C600B6AEAC /* Build configuration list for PBXNativeTarget "GXTaskExecutorTests" */;
+			buildPhases = (
+				E9820140284E34C600B6AEAC /* Sources */,
+				E9820141284E34C600B6AEAC /* Frameworks */,
+				E9820142284E34C600B6AEAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9820147284E34C600B6AEAC /* PBXTargetDependency */,
+			);
+			name = GXTaskExecutorTests;
+			productName = GXTaskExecutorTests;
+			productReference = E9820144284E34C600B6AEAC /* GXTaskExecutorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9820131284E34C500B6AEAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E9820139284E34C500B6AEAC = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					E9820143284E34C600B6AEAC = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = E9820134284E34C500B6AEAC /* Build configuration list for PBXProject "GXTaskExecutor" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9820130284E34C500B6AEAC;
+			productRefGroup = E982013B284E34C500B6AEAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9820139284E34C500B6AEAC /* GXTaskExecutor */,
+				E9820143284E34C600B6AEAC /* GXTaskExecutorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9820138284E34C500B6AEAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9820142284E34C600B6AEAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9820136284E34C500B6AEAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9820195284E363300B6AEAC /* GXAutoincreaseIdGenerator.m in Sources */,
+				E98201A0284E363300B6AEAC /* GXTaskObserver.m in Sources */,
+				E982016B284E362100B6AEAC /* GXChainExecutor+Call.m in Sources */,
+				E982018D284E363300B6AEAC /* GXChainQueueUtil.m in Sources */,
+				E98201A1284E363300B6AEAC /* GXTaskExecutorInstance.m in Sources */,
+				E982016D284E362100B6AEAC /* GXDefaultHandlerGenerator.m in Sources */,
+				E982019A284E363300B6AEAC /* GXBaseHandler.m in Sources */,
+				E982018B284E363300B6AEAC /* GXChainExecutor.m in Sources */,
+				E982015A284E361300B6AEAC /* GXThreadSafeMutableArray.m in Sources */,
+				E9820190284E363300B6AEAC /* GXHandlerChainGenerator.m in Sources */,
+				E9820169284E362100B6AEAC /* GXTaskObserver+Call.m in Sources */,
+				E98201A2284E363300B6AEAC /* GXHandlerConfig.m in Sources */,
+				E9820196284E363300B6AEAC /* GXTask.m in Sources */,
+				E982013F284E34C600B6AEAC /* GXTaskExecutor.docc in Sources */,
+				E982018C284E363300B6AEAC /* GXChainContext.m in Sources */,
+				E9820192284E363300B6AEAC /* GXHandlerChain.m in Sources */,
+				E982015D284E361300B6AEAC /* GXGCDTimer.m in Sources */,
+				E982019B284E363300B6AEAC /* GXHandlerChainIdentifierConvert.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9820140284E34C600B6AEAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E982014A284E34C600B6AEAC /* GXTaskExecutorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9820147284E34C600B6AEAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9820139284E34C500B6AEAC /* GXTaskExecutor */;
+			targetProxy = E9820146284E34C600B6AEAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E982014C284E34C600B6AEAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E982014D284E34C600B6AEAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E982014F284E34C600B6AEAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		E9820150284E34C600B6AEAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		E9820152284E34C600B6AEAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5ZB6XAM2R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9820153284E34C600B6AEAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5ZB6XAM2R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GurisXie.GXTaskExecutorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9820134284E34C500B6AEAC /* Build configuration list for PBXProject "GXTaskExecutor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E982014C284E34C600B6AEAC /* Debug */,
+				E982014D284E34C600B6AEAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E982014E284E34C600B6AEAC /* Build configuration list for PBXNativeTarget "GXTaskExecutor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E982014F284E34C600B6AEAC /* Debug */,
+				E9820150284E34C600B6AEAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9820151284E34C600B6AEAC /* Build configuration list for PBXNativeTarget "GXTaskExecutorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9820152284E34C600B6AEAC /* Debug */,
+				E9820153284E34C600B6AEAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9820131284E34C500B6AEAC /* Project object */;
+}
